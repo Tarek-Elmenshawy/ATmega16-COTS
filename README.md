@@ -1,2 +1,2 @@
-# ATmega16-Drivers
-This repository contains all layers for ATmega16 microcontroller
+# ATmega16-COTS
+This repository contains all drivers for ATmega16 microcontroller
