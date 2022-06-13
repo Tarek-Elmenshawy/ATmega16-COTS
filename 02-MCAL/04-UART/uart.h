@@ -41,7 +41,7 @@ typedef struct{
 	uint8  UART_stopBits;	/* To select number of stop bits */
 	uint32 UART_baudRate;	/* To select UART baud rate */
 	
-}UART_ConfigType;			/* Structure to select UART configurations */
+}UART_ConfigType;			/* Structure to hold UART configurations */
 
 /***********************************************************************/
 /***********				Functions Prototypes			  **********/

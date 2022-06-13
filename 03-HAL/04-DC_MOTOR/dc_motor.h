@@ -39,4 +39,4 @@
 void DC_MOTOR_init(void);
 void DC_MOTOR_rotate(uint8 a_state,uint8 a_speed);
 
-#endif
+#endif	/* DC_NOTOR_H */

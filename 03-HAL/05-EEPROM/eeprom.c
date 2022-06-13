@@ -15,7 +15,7 @@
 /***********				Functions Definitions			  **********/
 /***********************************************************************/
 
-uint8 EEPROM_wtiteByte(uint16 a_locationAddress, uint8 a_writeByte)
+uint8 EEPROM_writeByte(uint16 a_locationAddress, uint8 a_writeByte)
 {
 	/* Send start condition bit to start communication */
 	TWI_start();

@@ -1,25 +1,33 @@
 /***********************************************************************/
 /***********    Author     : Tarek Elmenshawy       		************/
-/***********    File Name  : eeprom.h			     		************/
+/***********    File Name  : buzzer.h			     		************/
 /***********	Version	   : V0.1							************/
-/***********    Date       : 30-05-2022             		************/
-/***********    Description: EEPROM driver header file		************/
+/***********    Date       : 07-06-2022             		************/
+/***********    Description: Buzzer driver header file    	************/
 /***********************************************************************/
 
 /***********************************************************************/
 /***********	Guard of file will call one time in .c file    *********/
 /***********************************************************************/
 
-#ifndef EEPROM_H
-#define EEPROM_H
+#ifndef BUZZER_H
+#define BUZZER_H
 
 #include "std_types.h"
+
+/***********************************************************************/
+/***********				Constants Definitions			  **********/
+/***********************************************************************/
+
+#define BUZZER_PORT		PORTB_ID
+#define BUZZER_PIN		PIN0_ID
 
 /***********************************************************************/
 /***********				Functions Prototypes			  **********/
 /***********************************************************************/
 
-uint8 EEPROM_writeByte(uint16 a_locationAddress, uint8 a_writeByte);
-uint8 EEPROM_readByte(uint16 a_locationAddress, uint8 *a_readByte);
+void BUZZER_init(void);
+void BUZZER_on(void);
+void BUZZER_off(void);
 
-#endif
+#endif	/* BUZZER_H */
